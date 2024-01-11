@@ -26,9 +26,10 @@ export const Navbar = () => {
             <span className="hide-tablet">00</span>
             <p>Home</p>
           </div>
-          {pathname === "/Space-tourism" && (
-            <motion.div className="underline" layoutId="underline" />
-          )}
+          {pathname === "/Space-tourism" ||
+            (pathname === "/Space-tourism/" && (
+              <motion.div className="underline" layoutId="underline" />
+            ))}
         </NavLink>
         <NavLink className="nav-item" to="/destination" onClick={handleClose}>
           <div className="is-flex is-centered">
