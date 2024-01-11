@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 
-import { motion } from "framer-motion";
-
 export const Crew = ({ data }) => {
   const [currentCrew, setCurrentCrew] = useState(data[0]);
 
@@ -65,7 +63,10 @@ export const Crew = ({ data }) => {
               <p>meet you crew</p>
             </div>
             <div className="image-wrapper">
-              <img src={currentCrew.images.png} alt={currentCrew.name} />
+              <img
+                src={process.env.PUBLIC_URL + currentCrew.images.png}
+                alt={currentCrew.name}
+              />
               <div className="line" />
             </div>
             <div className="pagination mobile">

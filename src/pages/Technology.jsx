@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 
-import { motion } from "framer-motion";
-
 export const Technology = ({ data }) => {
   const [currentTechnology, setCurrentTechnology] = useState(data[0]);
 
@@ -69,8 +67,9 @@ export const Technology = ({ data }) => {
               <img
                 src={
                   windowSize < 1216
-                    ? currentTechnology.images.landscape
-                    : currentTechnology.images.portrait
+                    ? process.env.PUBLIC_URL +
+                      currentTechnology.images.landscape
+                    : process.env.PUBLIC_URL + currentTechnology.images.portrait
                 }
                 alt={currentTechnology.name}
               />

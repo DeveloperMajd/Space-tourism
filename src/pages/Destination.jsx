@@ -42,7 +42,7 @@ export const Destination = ({ data }) => {
           <div className="column img-column">
             <div className="image-wrapper">
               <img
-                src={currentDestination.images.png}
+                src={process.env.PUBLIC_URL + currentDestination.images.png}
                 alt={currentDestination.name}
               />
             </div>

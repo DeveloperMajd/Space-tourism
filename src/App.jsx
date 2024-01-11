@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./style.scss";
 import data from "./data/data.json";
 
@@ -27,6 +27,7 @@ function App() {
             element={<Technology data={data.technology} />}
           />
           <Route path="/design-system" element={<DesignSystem />} />
+          <Route path="/Space-tourism" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </BrowserRouter>
