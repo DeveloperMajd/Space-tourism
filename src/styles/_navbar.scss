@@ -1,0 +1,143 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+
+  @include tablet {
+    padding-left: 2.438rem;
+    padding-top: 0;
+  }
+  @include desktop {
+    padding-top: 2.5rem;
+    padding-left: 3.438rem;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    img {
+      width: 3rem;
+      height: 3rem;
+      display: block;
+    }
+  }
+
+  .line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(clamp(1rem, 2vw, 3.438rem));
+    z-index: 1;
+    &::before {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: $white;
+      opacity: 25.15%;
+    }
+  }
+
+  .nav-items {
+    display: flex;
+    gap: 2rem;
+    padding-top: 2.118rem;
+    padding-inline: clamp(2.875rem, 5vw, 10.313rem);
+    backdrop-filter: blur(1.5rem);
+    z-index: 2;
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 8rem;
+      padding-right: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      left: 25%;
+      height: 100vh;
+      transform: translateX(100%);
+      transition: transform 0.4s ease;
+      &.open {
+        transform: translateX(0);
+      }
+    }
+
+    @include tablet {
+      gap: 2.5rem;
+    }
+
+    @include desktop {
+      gap: 3rem;
+    }
+    .nav-item {
+      color: $white;
+
+      span {
+        margin-right: 0.875rem;
+        font-family: $ff-barlow-condensed;
+        font-size: $fs-16;
+        letter-spacing: $ls-2_7;
+        font-weight: bold;
+      }
+      p {
+        font-family: $ff-barlow-condensed;
+        font-size: $fs-16;
+        letter-spacing: $ls-2_7;
+        text-transform: uppercase;
+
+        @include tablet {
+          font-size: $fs-14;
+          letter-spacing: $ls-2_36;
+        }
+      }
+
+      &.active {
+        .underline {
+          background-color: $white;
+          width: 100%;
+          height: 3px;
+          margin-top: 2.188rem;
+        }
+      }
+
+      &:not(.active):hover {
+        border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+      }
+
+      //* change the navbar into sidebar
+      @include mobile {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        &.active {
+          .underline {
+            background-color: $white;
+            width: 3px;
+            height: 100%;
+            margin-top: 0;
+          }
+        }
+
+        &:not(.active):hover {
+          border-right: 4px solid rgba(255, 255, 255, 0.5);
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  .hamburger-react {
+    color: $light;
+    margin-right: 1.5rem;
+    z-index: 3;
+
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+}

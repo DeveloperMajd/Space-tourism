@@ -1,0 +1,141 @@
+.destination {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem 2.5rem 2rem;
+  position: relative;
+  @include tablet {
+    padding: 1rem 3rem 2.5rem 3rem;
+  }
+
+  @include desktop {
+    justify-content: center;
+    padding: 3rem 8.5rem 3rem 8.5rem;
+  }
+
+  .columns {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      gap: 4rem;
+    }
+
+    .column {
+      flex: 1;
+    }
+
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+
+  .numbered-title {
+    @include desktop {
+      position: absolute;
+      top: 1rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin-bottom: 2.4rem;
+  }
+  li {
+    width: fit-content;
+    cursor: pointer;
+
+    .underline {
+      background-color: $white;
+      width: 100%;
+      height: 3px;
+    }
+
+    &:not(.active):hover {
+      border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .content-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include tablet {
+      padding-inline: 4rem;
+    }
+    @include desktop {
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+  .h2 {
+    margin-bottom: 1rem;
+  }
+  .description {
+    margin-bottom: 3.375rem;
+
+    @include desktop {
+      padding: 0;
+    }
+  }
+
+  .num-data {
+    padding-top: 1.75rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      gap: 3.5rem;
+    }
+    @include desktop {
+      flex-direction: row;
+      gap: 5rem;
+    }
+  }
+  .subHeading-2 {
+    margin-bottom: 0.75rem;
+  }
+
+  .img-column {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .image-wrapper {
+      width: 100%;
+      height: 100%;
+      max-width: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 4rem;
+
+      @include tablet {
+        padding: 3rem 6rem;
+      }
+      @include desktop {
+        padding: 1.5rem 3rem;
+      }
+      img {
+        width: 100%;
+        height: auto;
+
+        @include desktop {
+          width: 445px;
+          height: 445px;
+        }
+      }
+    }
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background: #383b4b;
+  }
+}

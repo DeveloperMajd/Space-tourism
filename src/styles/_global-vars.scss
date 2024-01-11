@@ -1,0 +1,76 @@
+//* breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1216px;
+$breakpoint-widescreen: 1840px;
+
+@mixin mobile {
+  @media (max-width: #{$breakpoint-tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
+@mixin widescreen {
+  @media (min-width: #{$breakpoint-widescreen}) {
+    @content;
+  }
+}
+//* Colors
+$dark: rgb(11, 13, 23);
+$light: rgb(208, 214, 249);
+$white: rgb(255, 255, 255);
+
+//*  font-families
+@font-face {
+  font-family: "Bellefair";
+  src: url("../fonts/Bellefair-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Barlow-Condensed";
+  src: url("../fonts/BarlowCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Regular.ttf");
+}
+$ff-bellefair: "Bellefair", serif;
+$ff-barlow-condensed: "Barlow-Condensed", sans-serif;
+$ff-barlow: "Barlow", sans-serif;
+
+//* font-sizes
+$fs-150: clamp(5rem, 9vw + 1.5rem, 9.375rem);
+$fs-100: 6.25rem;
+$fs-80: 5rem;
+$fs-56: 3.5rem;
+$fs-40: 2.5rem;
+$fs-32: 2rem;
+$fs-28: 1.75rem;
+$fs-24: 1.5rem;
+$fs-20: 1.25rem;
+$fs-18: 1.125rem;
+$fs-16: 1rem;
+$fs-15: 0.9375rem;
+$fs-14: 0.875rem;
+
+//* letter Spacing
+$ls-1_25: 0.078;
+$ls-2: 0.125rem;
+$ls-2_36: 0.148rem;
+$ls-2_7: 0.169rem;
+$ls-3_38: 0.211rem;
+$ls-4_05: 0.253rem;
+$ls-4_72: 0.295rem;
+$ls-4_75: 0.297rem;

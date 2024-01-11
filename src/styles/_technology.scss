@@ -1,0 +1,222 @@
+.technology {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.5rem 0 2.5rem 0;
+
+  @include tablet {
+    padding: 1rem 0 2.5rem 0;
+  }
+
+  @include desktop {
+    justify-content: center;
+    padding: 1rem 0 3rem 8.5rem;
+  }
+
+  .h4 {
+    opacity: 0.5;
+  }
+
+  .columns {
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include tablet {
+    }
+    @include desktop {
+      gap: 4rem;
+      flex-direction: row;
+      padding-bottom: 0;
+    }
+  }
+
+  .content-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    @include tablet {
+      // justify-content: space-between;
+    }
+    @include desktop {
+      flex: 60%;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+      text-align: left;
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+
+      @include desktop {
+        flex-direction: row-reverse;
+        gap: 5rem;
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+
+      @include tablet {
+        padding: 2.5rem 0;
+        max-width: 70%;
+      }
+
+      .h4 {
+        @include desktop {
+          margin-bottom: 1rem;
+        }
+      }
+      .h3 {
+        @include tablet {
+          margin-bottom: 1rem;
+        }
+        @include desktop {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+  .h2 {
+    margin-bottom: 1rem;
+  }
+  .description {
+    margin-bottom: 3.375rem;
+
+    @include desktop {
+      padding: 0;
+    }
+  }
+
+  .numbered-title {
+    margin-bottom: 2rem;
+    @include tablet {
+      align-self: flex-start;
+      margin-bottom: 3.75rem;
+      margin-left: 3rem;
+    }
+    @include desktop {
+      margin-bottom: 0;
+    }
+  }
+  .num-data {
+    padding-top: 1.75rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      gap: 3.5rem;
+    }
+    @include desktop {
+      flex-direction: row;
+      gap: 5rem;
+    }
+  }
+  .subHeading-2 {
+    margin-bottom: 0.75rem;
+  }
+
+  .image-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include desktop {
+      align-items: flex-end;
+      justify-content: center;
+      gap: 2.5rem;
+      flex: 40%;
+    }
+    .image-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+
+      @include tablet {
+      }
+      @include desktop {
+        width: auto;
+        align-items: flex-end;
+      }
+      img {
+        width: auto;
+        display: block;
+
+        @include tablet {
+          width: 100%;
+          height: auto;
+        }
+        @include desktop {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background: #383b4b;
+
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+
+  .pagination {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    @include tablet {
+      margin-top: 3.5rem;
+    }
+    @include desktop {
+      flex-direction: column;
+    }
+  }
+  .pagination-bullet {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: transparent;
+    color: $white;
+    border: 1px solid rgba($color: $white, $alpha: 0.25);
+    cursor: pointer;
+    gap: 2rem;
+    &:hover {
+      border: 1px solid rgba($color: $white, $alpha: 1);
+    }
+    &.active {
+      background: $white;
+      color: $dark;
+      opacity: 1;
+    }
+
+    @include desktop {
+      width: 5rem;
+      height: 5rem;
+      font-size: 2rem;
+    }
+  }
+}
