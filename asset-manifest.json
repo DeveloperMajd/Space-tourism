@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Space-tourism/static/css/main.f245f3fd.css",
-    "main.js": "/Space-tourism/static/js/main.c1f96c65.js",
+    "main.js": "/Space-tourism/static/js/main.12a64e83.js",
     "static/media/Barlow-Regular.ttf": "/Space-tourism/static/media/Barlow-Regular.e7eb634d040a6f384033.ttf",
     "static/media/BarlowCondensed-Regular.ttf": "/Space-tourism/static/media/BarlowCondensed-Regular.a51441e972d57b28e7c1.ttf",
     "static/media/Bellefair-Regular.ttf": "/Space-tourism/static/media/Bellefair-Regular.6b84d927d5ad108e909a.ttf",
     "index.html": "/Space-tourism/index.html",
     "main.f245f3fd.css.map": "/Space-tourism/static/css/main.f245f3fd.css.map",
-    "main.c1f96c65.js.map": "/Space-tourism/static/js/main.c1f96c65.js.map"
+    "main.12a64e83.js.map": "/Space-tourism/static/js/main.12a64e83.js.map"
   },
   "entrypoints": [
     "static/css/main.f245f3fd.css",
-    "static/js/main.c1f96c65.js"
+    "static/js/main.12a64e83.js"
   ]
 }
