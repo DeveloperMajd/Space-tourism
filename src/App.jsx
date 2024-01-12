@@ -16,7 +16,7 @@ function App() {
       <div className="main-container">
         <Navbar />
         <Routes>
-          <Route path="/Space-tourism" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route
             path="/destination"
             element={<Destination data={data.destinations} />}
