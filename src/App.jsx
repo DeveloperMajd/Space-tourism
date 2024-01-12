@@ -7,7 +7,6 @@ import { Crew } from "./pages/Crew";
 import { Destination } from "./pages/Destination";
 import { Home } from "./pages/Home";
 import { Technology } from "./pages/Technology";
-import { DesignSystem } from "./pages/DesignSystem";
 import { Navbar } from "./components/Navbar";
 
 function App() {
@@ -26,7 +25,6 @@ function App() {
             path="/technology"
             element={<Technology data={data.technology} />}
           />
-          <Route path="/design-system" element={<DesignSystem />} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -15,19 +15,18 @@ export const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <Link to="/Space-tourism" alt="home">
+        <Link to="/" alt="home">
           <img src={logoPath} alt="Logo" />
         </Link>
       </div>
       <div className="line hide-mobile hide-tablet"></div>
       <nav className={`nav-items ${isOpen ? "open" : ""}`}>
-        <NavLink className="nav-item" to="/Space-tourism" onClick={handleClose}>
+        <NavLink className="nav-item" to="/" onClick={handleClose}>
           <div className="is-flex is-centered">
             <span className="hide-tablet">00</span>
             <p>Home</p>
           </div>
-          {(pathname === "/Space-tourism" ||
-            pathname === "/Space-tourism/") && (
+          {pathname === "/" && (
             <motion.div className="underline" layoutId="underline" />
           )}
         </NavLink>
