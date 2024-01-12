@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/DeveloperMajd/Space-tourism.git)
-- Live Site URL: [Add live site URL here](https://DeveloperMajd.github.io/Space-tourism)
+- Solution URL: [https://github.com/DeveloperMajd/Space-tourism.git]
+- Live Site URL: [https://space-tourism-psi-six.vercel.app/]
 
 ## My process
 
