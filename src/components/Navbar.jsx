@@ -13,7 +13,7 @@ export const Navbar = () => {
     setIsOpen(false);
   };
   return (
-    <div className="navbar">
+    <div className="navbar" role="navigation">
       <div className="logo">
         <Link to="/" alt="home">
           <img src={logoPath} alt="Logo" />

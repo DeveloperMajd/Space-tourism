@@ -12,7 +12,7 @@ import { Navbar } from "./components/Navbar";
 function App() {
   return (
     <BrowserRouter>
-      <div className="main-container">
+      <main className="main-container">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -26,7 +26,7 @@ function App() {
             element={<Technology data={data.technology} />}
           />
         </Routes>
-      </div>
+      </main>
     </BrowserRouter>
   );
 }
