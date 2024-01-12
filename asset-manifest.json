@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Space-tourism/static/css/main.f245f3fd.css",
-    "main.js": "/Space-tourism/static/js/main.12a64e83.js",
-    "static/media/Barlow-Regular.ttf": "/Space-tourism/static/media/Barlow-Regular.e7eb634d040a6f384033.ttf",
-    "static/media/BarlowCondensed-Regular.ttf": "/Space-tourism/static/media/BarlowCondensed-Regular.a51441e972d57b28e7c1.ttf",
-    "static/media/Bellefair-Regular.ttf": "/Space-tourism/static/media/Bellefair-Regular.6b84d927d5ad108e909a.ttf",
-    "index.html": "/Space-tourism/index.html",
-    "main.f245f3fd.css.map": "/Space-tourism/static/css/main.f245f3fd.css.map",
-    "main.12a64e83.js.map": "/Space-tourism/static/js/main.12a64e83.js.map"
+    "main.css": "/static/css/main.5c846535.css",
+    "main.js": "/static/js/main.b2c983ae.js",
+    "static/media/Barlow-Regular.ttf": "/static/media/Barlow-Regular.e7eb634d040a6f384033.ttf",
+    "static/media/BarlowCondensed-Regular.ttf": "/static/media/BarlowCondensed-Regular.a51441e972d57b28e7c1.ttf",
+    "static/media/Bellefair-Regular.ttf": "/static/media/Bellefair-Regular.6b84d927d5ad108e909a.ttf",
+    "index.html": "/index.html",
+    "main.5c846535.css.map": "/static/css/main.5c846535.css.map",
+    "main.b2c983ae.js.map": "/static/js/main.b2c983ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.f245f3fd.css",
-    "static/js/main.12a64e83.js"
+    "static/css/main.5c846535.css",
+    "static/js/main.b2c983ae.js"
   ]
 }
