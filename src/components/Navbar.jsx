@@ -13,7 +13,7 @@ export const Navbar = () => {
     setIsOpen(false);
   };
   return (
-    <div className="navbar" role="navigation">
+    <div className="navbar" role="navigation" aria-label="navbar">
       <div className="logo">
         <Link to="/" alt="home">
           <img src={logoPath} alt="Logo" />
